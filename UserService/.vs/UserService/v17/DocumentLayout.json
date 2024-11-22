@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\repositories\\uiuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:repositories\\uiuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -54,17 +54,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-08T08:34:11.034Z",
               "EditorCaption": ""
@@ -83,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserController\\UserController.cs",
               "RelativeDocumentMoniker": "UserController\\UserController.cs",
@@ -120,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -133,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UIUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Repositories\\UIUserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UIUserRepository.cs",
@@ -141,12 +141,11 @@
               "RelativeToolTip": "Repositories\\UIUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:53:48.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T08:53:48.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
@@ -154,8 +153,7 @@
               "RelativeToolTip": "Repositories\\UserRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAuwCEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:56:20.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T08:56:20.047Z"
             },
             {
               "$type": "Document",
