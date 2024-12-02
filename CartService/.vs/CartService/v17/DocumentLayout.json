@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Migrations\\20241121140255_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241121140255_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\cartservice\\cartservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|solutionrelative:cartservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\cartservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\cartservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\cartservice\\migrations\\20241121140255_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|solutionrelative:migrations\\20241121140255_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\cartservice\\data\\cartcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|solutionrelative:repository\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\cartservice\\cartservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|solutionrelative:cartservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\cartservice\\model\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E160270E-5745-4AD4-ACDF-AA402FF827E6}|CartService.csproj|solutionrelative:model\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "20241121140255_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Migrations\\20241121140255_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20241121140255_InitialCreate.cs",
@@ -102,7 +102,7 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-21T12:40:43.82Z",
               "EditorCaption": ""
@@ -122,20 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CartService.http",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.http",
-              "RelativeDocumentMoniker": "CartService.http",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.http",
-              "RelativeToolTip": "CartService.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-11-21T12:40:40.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -148,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CartContext.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Data\\CartContext.cs",
               "RelativeDocumentMoniker": "Data\\CartContext.cs",
@@ -161,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ICartRepository.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Repository\\ICartRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ICartRepository.cs",
@@ -174,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CartRepository.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Repository\\CartRepository.cs",
               "RelativeDocumentMoniker": "Repository\\CartRepository.cs",
@@ -187,7 +174,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartService.csproj",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.csproj",
+              "RelativeDocumentMoniker": "CartService.csproj",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.csproj",
+              "RelativeToolTip": "CartService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-21T12:19:06.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "CartService.http",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.http",
+              "RelativeDocumentMoniker": "CartService.http",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.http",
+              "RelativeToolTip": "CartService.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-21T12:40:40.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Controllers\\CartController.cs",
@@ -200,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -219,7 +232,7 @@
               "RelativeDocumentMoniker": "Model\\CartItem.cs",
               "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\Model\\CartItem.cs",
               "RelativeToolTip": "Model\\CartItem.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAiwAgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA2wAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T12:20:43.757Z",
               "EditorCaption": ""
@@ -235,19 +248,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAUwAgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T12:19:42.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CartService",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.csproj",
-              "RelativeDocumentMoniker": "CartService.csproj",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\CartService\\CartService.csproj",
-              "RelativeToolTip": "CartService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-21T12:19:06.163Z",
               "EditorCaption": ""
             }
           ]

@@ -45,3 +45,6 @@ obj/
 
 # Ignore node_modules for frontend projects
 node_modules/
+
+# Ignore Visual Studio internal files
+.vs/
