@@ -18,18 +18,29 @@ jobs:
       with:
         terraform_version: latest
 
+    - name: Extract Azure Credentials
+      id: azure_creds
+      run: |
+        echo "${{ secrets.AZURE_CREDENTIALS }}" > azure_credentials.json
+        export ARM_CLIENT_ID=$(jq -r '.ARM_CLIENT_ID' azure_credentials.json)
+        export ARM_CLIENT_SECRET=$(jq -r '.ARM_CLIENT_SECRET' azure_credentials.json)
+        export ARM_SUBSCRIPTION_ID=$(jq -r '.ARM_SUBSCRIPTION_ID' azure_credentials.json)
+        export ARM_TENANT_ID=$(jq -r '.ARM_TENANT_ID' azure_credentials.json)
+      env:
+        AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+
     - name: Terraform Init
       env:
-        ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
-        ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
-        ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
-        ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+        ARM_CLIENT_ID: $ARM_CLIENT_ID
+        ARM_CLIENT_SECRET: $ARM_CLIENT_SECRET
+        ARM_SUBSCRIPTION_ID: $ARM_SUBSCRIPTION_ID
+        ARM_TENANT_ID: $ARM_TENANT_ID
       run: terraform init
 
     - name: Terraform Apply
       env:
-        ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
-        ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
-        ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
-        ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+        ARM_CLIENT_ID: $ARM_CLIENT_ID
+        ARM_CLIENT_SECRET: $ARM_CLIENT_SECRET
+        ARM_SUBSCRIPTION_ID: $ARM_SUBSCRIPTION_ID
+        ARM_TENANT_ID: $ARM_TENANT_ID
       run: terraform apply -auto-approve
