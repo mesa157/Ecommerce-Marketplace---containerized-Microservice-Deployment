@@ -9,22 +9,22 @@ data "azurerm_resource_group" "existing" {
 
 # Create a virtual network
 resource "azurerm_virtual_network" "vnet" {
-  name                = "univnet"
+  name                = "win10-vnet"
   address_space       = ["10.0.0.0/16"]
   location            = data.azurerm_resource_group.existing.location
   resource_group_name = data.azurerm_resource_group.existing.name
 }
 
 # Create subnets
-resource "azurerm_subnet" "subnet1" {
-  name                 = "sub1"
+resource "azurerm_subnet" "aks_subnet" {
+  name                 = "aks-subnet"
   resource_group_name  = data.azurerm_resource_group.existing.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.1.0/24"]
 }
 
-resource "azurerm_subnet" "subnet2" {
-  name                 = "sub2"
+resource "azurerm_subnet" "acr_subnet" {
+  name                 = "acr-subnet"
   resource_group_name  = data.azurerm_resource_group.existing.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.2.0/24"]
@@ -32,7 +32,7 @@ resource "azurerm_subnet" "subnet2" {
 
 # Create an Azure Container Registry
 resource "azurerm_container_registry" "acr" {
-  name                = "uniacr"
+  name                = "win10acr"
   resource_group_name = data.azurerm_resource_group.existing.name
   location            = data.azurerm_resource_group.existing.location
   sku                 = "Basic"
@@ -41,16 +41,16 @@ resource "azurerm_container_registry" "acr" {
 
 # Create an AKS cluster
 resource "azurerm_kubernetes_cluster" "aks" {
-  name                = "uniaks"
+  name                = "win10-aks"
   location            = data.azurerm_resource_group.existing.location
   resource_group_name = data.azurerm_resource_group.existing.name
-  dns_prefix          = "uniaks"
+  dns_prefix          = "win10aks"
 
   default_node_pool {
-    name       = "default"
-    node_count = 1
-    vm_size    = "Standard_DS2_v2"
-    vnet_subnet_id = azurerm_subnet.subnet1.id
+    name                = "default"
+    node_count          = 2
+    vm_size             = "Standard_DS2_v2"
+    vnet_subnet_id      = azurerm_subnet.aks_subnet.id
   }
 
   identity {
@@ -62,22 +62,12 @@ resource "azurerm_kubernetes_cluster" "aks" {
     network_policy = "azure"
   }
 
-  role_based_access_control {
-    enabled = true
-  }
-
-  addon_profile {
-    azure_policy {
-      enabled = true
-    }
-  }
-
-  depends_on = [azurerm_subnet.subnet1]
+  depends_on = [azurerm_subnet.aks_subnet]
 }
 
 # Assign ACR pull role to AKS
 resource "azurerm_role_assignment" "aks_acr" {
-  principal_id         = azurerm_kubernetes_cluster.aks.kubelet_identity[0].object_id
+  principal_id         = azurerm_kubernetes_cluster.aks.identity[0].principal_id
   role_definition_name = "AcrPull"
   scope                = azurerm_container_registry.acr.id
 }
