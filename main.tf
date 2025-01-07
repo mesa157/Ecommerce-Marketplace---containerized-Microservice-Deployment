@@ -1,5 +1,6 @@
 provider "azurerm" {
   features {}
+  subscription_id = "ec81e1cc-dbff-4a8c-a936-634b895b874f"
 }
 
 # Use the existing resource group
