@@ -3,48 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\dtos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:dtos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\repositories\\uiuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:repositories\\uiuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\dtos\\class4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:dtos\\class4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\dtos\\class3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:dtos\\class3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\dtos\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:dtos\\class2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\dtos\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:dtos\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\controllers\\usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:controllers\\usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\migrations\\20241108084210_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:migrations\\20241108084210_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:userservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BA38FAF5-16F1-413F-BC83-99E37ADFEF5C}|UserService.csproj|solutionrelative:userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|c:\\users\\mesay\\source\\repos\\ecommerce-marketplace---containerized-microservice-deployment\\userservice\\migrations\\20241217093412_userserviceintial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41A28B6F-9EDB-4F2B-A0B8-DDC7BDE5D6F0}|userService.csproj|solutionrelative:migrations\\20241217093412_userserviceintial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,137 +71,171 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-08T08:34:11.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:59:50.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserController\\UserController.cs",
-              "RelativeDocumentMoniker": "UserController\\UserController.cs",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserController\\UserController.cs",
-              "RelativeToolTip": "UserController\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:03:17.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.http",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserService.http",
-              "RelativeDocumentMoniker": "UserService.http",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserService.http",
-              "RelativeToolTip": "UserService.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-11-04T14:22:22.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Model\\User.cs",
               "RelativeDocumentMoniker": "Model\\User.cs",
               "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Model\\User.cs",
               "RelativeToolTip": "Model\\User.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwAgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:15:49.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-08T09:36:52.648Z",
+              "WhenOpened": "2024-12-08T11:29:58.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UIUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Repositories\\UIUserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UIUserRepository.cs",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Repositories\\UIUserRepository.cs",
-              "RelativeToolTip": "Repositories\\UIUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\UserProfileDto.cs",
+              "RelativeToolTip": "DTOs\\UserProfileDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:53:48.396Z"
+              "WhenOpened": "2024-12-17T09:21:54.641Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAuwCEAAAABAAAAAAAAAA==",
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class1.cs",
+              "RelativeDocumentMoniker": "DTOs\\Class1.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class1.cs",
+              "RelativeToolTip": "DTOs\\Class1.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:56:20.047Z"
+              "WhenOpened": "2024-12-08T12:29:15.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserService.csproj",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserService.csproj",
-              "RelativeDocumentMoniker": "UserService.csproj",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserService.csproj",
-              "RelativeToolTip": "UserService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-08T08:34:36.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20241108084210_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Migrations\\20241108084210_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241108084210_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Migrations\\20241108084210_InitialCreate.cs",
-              "RelativeToolTip": "Migrations\\20241108084210_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:42:11.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "UserContext.cs",
               "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Data\\UserContext.cs",
               "RelativeDocumentMoniker": "Data\\UserContext.cs",
               "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Data\\UserContext.cs",
               "RelativeToolTip": "Data\\UserContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:24:39.781Z"
+              "WhenOpened": "2024-12-08T11:28:16.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class4.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class4.cs",
+              "RelativeDocumentMoniker": "DTOs\\Class4.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class4.cs",
+              "RelativeToolTip": "DTOs\\Class4.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T09:24:45.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class3.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class3.cs",
+              "RelativeDocumentMoniker": "DTOs\\Class3.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class3.cs",
+              "RelativeToolTip": "DTOs\\Class3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:29:37.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Class2.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class2.cs",
+              "RelativeDocumentMoniker": "DTOs\\Class2.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class2.cs",
+              "RelativeToolTip": "DTOs\\Class2.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:29:25.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class.cs",
+              "RelativeDocumentMoniker": "DTOs\\Class.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\DTOs\\Class.cs",
+              "RelativeToolTip": "DTOs\\Class.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:29:06.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Controllers\\UserController\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController\\UserController.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Controllers\\UserController\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController\\UserController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:30:10.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserService.http",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserService.http",
+              "RelativeDocumentMoniker": "UserService.http",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\UserService.http",
+              "RelativeToolTip": "UserService.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-09T09:34:29.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:28:22.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-08T11:26:11.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20241217093412_userserviceintial.cs",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Migrations\\20241217093412_userserviceintial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241217093412_userserviceintial.cs",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Migrations\\20241217093412_userserviceintial.cs",
+              "RelativeToolTip": "Migrations\\20241217093412_userserviceintial.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T09:34:12.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-09T09:34:42.785Z"
             }
           ]
         }

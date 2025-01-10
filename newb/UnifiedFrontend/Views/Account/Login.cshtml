@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4 class="mb-0">Login</h4>
+                </div>
+                <div class="card-body p-4">
+                    <form method="post">
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    @if (!string.IsNullOrEmpty(ViewBag.Error))
+                    {
+                        <div class="alert alert-danger mt-3">@ViewBag.Error</div>
+                    }
+                </div>
+                <div class="card-footer text-center">
+                    <small>Don't have an account? <a href="@Url.Action("Register", "Account")" class="text-primary">Register here</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

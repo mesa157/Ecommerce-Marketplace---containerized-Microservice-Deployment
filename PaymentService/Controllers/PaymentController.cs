@@ -1,103 +1,134 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using PaymentService.Data;
 using PaymentService.Model;
 using PaymentService.Services;
-using System.Collections.Generic;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace PaymentService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/payments")]
     [ApiController]
-    public class PaymentsController : ControllerBase
+    public class PaymentController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
         private readonly IPaymentService _paymentService;
+        private readonly ILogger<PaymentController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public PaymentsController(ApplicationDbContext context, IPaymentService paymentService)
+        public PaymentController(IPaymentService paymentService, ILogger<PaymentController> logger, ApplicationDbContext context)
         {
-            _context = context;
             _paymentService = paymentService;
+            _logger = logger;
+            _context = context; // Injecting the ApplicationDbContext
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Payment>>> GetPayments()
+        // POST: api/payments
+        [HttpPost]
+        public async Task<IActionResult> PostPayment([FromBody] Payment payment)
         {
-            return await _context.Payments.ToListAsync();
-        }
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Payment>> GetPayment(int id)
-        {
-            var payment = await _context.Payments.FindAsync(id);
-
             if (payment == null)
             {
-                return NotFound();
+                return BadRequest("Payment details are required.");
             }
 
-            return payment;
-        }
+            var result = await _paymentService.ProcessPayment(payment);
 
-        [HttpPost]
-        public async Task<ActionResult<Payment>> PostPayment(Payment payment)
-        {
-            payment = await _paymentService.ProcessPayment(payment);
-            _context.Payments.Add(payment);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetPayment", new { id = payment.Id }, payment);
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutPayment(int id, Payment payment)
-        {
-            if (id != payment.Id)
+            if (result.Status == "Succeeded")
             {
-                return BadRequest();
+                return Ok(result);
             }
 
-            _context.Entry(payment).State = EntityState.Modified;
+            return StatusCode(500, $"Payment failed: {result.Status}");
+        }
+
+        // PUT: api/payments/{id}/status
+        [HttpPut("{id}/status")]
+        public async Task<IActionResult> UpdatePaymentStatus(int id, [FromBody] string status)
+        {
+            if (string.IsNullOrEmpty(status))
+            {
+                return BadRequest("Status is required.");
+            }
 
             try
             {
+                var payment = await _context.Payments.FindAsync(id);
+                if (payment == null)
+                {
+                    return NotFound("Payment not found.");
+                }
+
+                payment.Status = status;
+                _context.Payments.Update(payment);
                 await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PaymentExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
 
-            return NoContent();
+                return Ok(payment);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error updating payment status: {ex.Message}");
+                return StatusCode(500, "An error occurred while updating the payment status.");
+            }
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePayment(int id)
+        // GET: api/payments/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPayment(int id)
         {
-            var payment = await _context.Payments.FindAsync(id);
-            if (payment == null)
+            try
             {
-                return NotFound();
+                var payment = await _context.Payments.FindAsync(id);
+                if (payment == null)
+                {
+                    return NotFound("Payment not found.");
+                }
+
+                return Ok(payment);
             }
-
-            _context.Payments.Remove(payment);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error retrieving payment: {ex.Message}");
+                return StatusCode(500, "An error occurred while retrieving the payment.");
+            }
         }
 
-        private bool PaymentExists(int id)
+        // GET: api/payments (with search and pagination)
+        [HttpGet]
+        public async Task<IActionResult> GetPayments([FromQuery] string search = "", [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
-            return _context.Payments.Any(e => e.Id == id);
+            try
+            {
+                var query = _context.Payments.AsQueryable();
+
+                // Search filter
+                if (!string.IsNullOrEmpty(search))
+                {
+                    query = query.Where(p => p.TransactionId.Contains(search) || p.Status.Contains(search));
+                }
+
+                // Pagination
+                var totalItems = await query.CountAsync();
+                var payments = await query
+                    .Skip((page - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToListAsync();
+
+                return Ok(new
+                {
+                    TotalItems = totalItems,
+                    Page = page,
+                    PageSize = pageSize,
+                    Payments = payments
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error retrieving payments: {ex.Message}");
+                return StatusCode(500, "An error occurred while retrieving payments.");
+            }
         }
     }
 }
