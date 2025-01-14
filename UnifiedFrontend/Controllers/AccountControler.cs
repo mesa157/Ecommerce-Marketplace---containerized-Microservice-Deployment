@@ -1,16 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using System;
-using System.Net.Http;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using UnifiedFrontend.Models.UserModel;
 using UnifiedFrontend.Services.UserserviceApis;
 
 namespace UnifiedFrontend.Controllers
 {
-    // Controller for user account operations
     public class AccountController : Controller
     {
         private readonly IUserServiceApi _userServiceApi;
@@ -29,9 +27,9 @@ namespace UnifiedFrontend.Controllers
         public async Task<IActionResult> Register(string name, string email, string password)
         {
             var user = new { Name = name, Email = email, Password = password };
-            var response = await _userServiceApi.RegisterUserAsync(user); // Expecting RegisterResponseDto
+            var response = await _userServiceApi.RegisterUserAsync(user);
 
-            if (response != null && response.UserId != Guid.Empty) // Check if registration was successful
+            if (response != null && response.UserId != Guid.Empty)
             {
                 TempData["SuccessMessage"] = "Registration successful. Please login.";
                 return RedirectToAction("Login");
@@ -40,7 +38,6 @@ namespace UnifiedFrontend.Controllers
             ViewBag.Error = "Registration failed. Please try again.";
             return View();
         }
-
 
         public IActionResult Login()
         {
@@ -184,10 +181,16 @@ namespace UnifiedFrontend.Controllers
                 return Guid.Empty;
             }
 
-            // Decode token logic here if needed to extract user ID
-            return Guid.NewGuid(); // Placeholder
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadToken(token) as JwtSecurityToken;
+
+            if (jwtToken == null)
+            {
+                return Guid.Empty;
+            }
+
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+            return userIdClaim != null ? Guid.Parse(userIdClaim.Value) : Guid.Empty;
         }
     }
-
-
 }

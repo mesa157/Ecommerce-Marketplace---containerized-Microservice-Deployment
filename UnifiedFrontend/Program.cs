@@ -75,12 +75,16 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
+    pattern: "{controller=Products}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "userService",
     pattern: "{controller=Account}/{action=Login}/{id?}");
 
 // Add routing for ProductCatalog
-app.MapControllerRoute(
-    name: "productCatalog",
-    pattern: "{controller=Products}/{action=Index}/{id?}");
+//app.MapControllerRoute(
+   // name: "productCatalog",
+   // pattern: "{controller=Products}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "categories",
