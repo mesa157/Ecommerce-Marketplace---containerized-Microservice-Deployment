@@ -68,7 +68,8 @@ namespace ShoppingBasket.Service
                 {
                     ProductId = basketLineForCreation.ProductId,
                     Price = productDto.Price,
-                    Quantity = basketLineForCreation.Quantity
+                    Quantity = basketLineForCreation.Quantity,
+                    ShoppingBasketId = basket.ShoppingBasketId
                 };
                 basket.BasketLines.Add(basketLine);
             }

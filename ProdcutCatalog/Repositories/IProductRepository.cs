@@ -1,11 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ProdcutCatalog.DbContexts;
-using ProdcutCatalog.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ProdcutCatalog.Entities;
+﻿using ProdcutCatalog.Entities;
 
 namespace ProdcutCatalog.Repositories
 {
@@ -16,5 +9,6 @@ namespace ProdcutCatalog.Repositories
         Task AddProduct(Product product);
         Task UpdateProduct(Product product);
         Task DeleteProduct(Guid productId);
+        Task<IEnumerable<Product>> GetProducts();
     }
 }

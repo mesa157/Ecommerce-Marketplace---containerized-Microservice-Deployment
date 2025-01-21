@@ -16,6 +16,13 @@ namespace ProdcutCatalog.Repositories
             _context = context;
         }
 
+        public async Task<IEnumerable<Product>> GetProducts()
+        {
+            var query = _context.Products.Include(x => x.Category).AsQueryable();
+
+            return await query.ToListAsync();
+        }
+
         public async Task<IEnumerable<Product>> GetProducts(Guid categoryId, string name, decimal? minPrice, decimal? maxPrice)
         {
             var query = _context.Products.Include(x => x.Category).AsQueryable();

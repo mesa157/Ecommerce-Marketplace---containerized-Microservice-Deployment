@@ -52,7 +52,7 @@ namespace UnifiedFrontend.Services.ProductCatagory
                 try
                 {
                     // Fetch all products from the API without pagination
-                    return await _httpClient.GetFromJsonAsync<List<ProductViewModel>>("api/products");
+                    return await _httpClient.GetFromJsonAsync<List<ProductViewModel>>("api/products/all");
                 }
                 catch (Exception ex)
                 {
