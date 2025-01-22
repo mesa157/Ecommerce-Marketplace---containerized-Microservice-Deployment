@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Model\\User.cs",
               "ToolTip": "C:\\Users\\mesay\\source\\repos\\Ecommerce-Marketplace---containerized-Microservice-Deployment\\UserService\\Model\\User.cs",
               "RelativeToolTip": "Model\\User.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwAwAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T11:29:58.77Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "RelativeToolTip": "DTOs\\UserProfileDto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAQwAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T09:21:54.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T09:21:54.641Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "DTOs\\Class1.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:29:15.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T12:29:15.426Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Data\\UserContext.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:28:16.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:28:16.114Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "DTOs\\Class4.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T09:24:45.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T09:24:45.386Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "DTOs\\Class3.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAkwAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:29:37.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T12:29:37.085Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "DTOs\\Class2.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAQwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:29:25.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T12:29:25.663Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "DTOs\\Class.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAQwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:29:06.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T12:29:06.117Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Controllers\\UserController\\UserController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAswAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T11:30:10.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T11:30:10.489Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "UserService.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-09T09:34:29.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T09:34:29.522Z"
             },
             {
               "$type": "Document",
