@@ -66,11 +66,7 @@ namespace UnifiedFrontend.Services.ProductCatagory
         {
             try
             {
-                var categories = await _httpClient.GetFromJsonAsync<List<CategoryViewModel>>("api/categories");
-                foreach (var category in categories)
-                {
-                    category.Products = await GetProductsAsync(category.CategoryId);
-                }
+                var categories = await _httpClient.GetFromJsonAsync<List<CategoryViewModel>>("api/categories/all");
                 return categories;
             }
             catch (Exception ex)

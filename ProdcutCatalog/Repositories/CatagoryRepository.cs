@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProdcutCatalog.DbContexts;
 using ProdcutCatalog.Entities;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ProdcutCatalog.Repositories
 {
@@ -18,12 +15,12 @@ namespace ProdcutCatalog.Repositories
 
         public async Task<IEnumerable<Category>> GetAllCategories()
         {
-            return await _context.Categories.ToListAsync();
+            return await _context.Categories.Include(x => x.Products).ToListAsync();
         }
 
-        public async Task<Category> GetCategoryById(string categoryId)
+        public async Task<Category> GetCategoryById(Guid categoryId)
         {
-            return await _context.Categories.FirstOrDefaultAsync(x => x.CategoryId.ToString() == categoryId);
+            return await _context.Categories.FirstOrDefaultAsync(x => x.CategoryId == categoryId);
         }
 
         public async Task AddCategory(Category category)
