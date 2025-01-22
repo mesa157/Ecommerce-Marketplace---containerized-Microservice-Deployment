@@ -22,6 +22,13 @@ namespace ProductCatalog.Controllers
             _mapper = mapper;
         }
 
+        [HttpGet("all")]
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAll()
+        {
+            var result = await _productRepository.GetProducts();
+            return Ok(_mapper.Map<List<ProductDto>>(result));
+        }
+
         // Get all products, with filtering options
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductDto>>> Get(
