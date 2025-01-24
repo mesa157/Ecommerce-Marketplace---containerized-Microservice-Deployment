@@ -37,7 +37,7 @@
                         </form>
                     </td>
                     <td>@line.Price.ToString("C")</td>
-                    <td>@(line.Quantity * line.Price).ToString("C")</td>
+                    <td>@((line.Quantity * line.Price).ToString("C"))</td>
                     <td>
                         <form method="post" asp-action="RemoveFromCart" asp-controller="Cart">
                             <input type="hidden" name="userId" value="@Model.UserId" />

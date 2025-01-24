@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System.Net.Http.Json;
+﻿using Microsoft.AspNetCore.Mvc;
 using UnifiedFrontend.Models.CartModel;
 using UnifiedFrontend.Models.ProductCatalogModel;
+using UnifiedFrontend.Services.ProductCatagory;
 
 namespace UnifiedFrontend.Controllers
 {
@@ -12,12 +10,17 @@ namespace UnifiedFrontend.Controllers
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
         private readonly ILogger<CartController> _logger;
+        private readonly ProductCatalogApi _productApiService;
 
-        public CartController(IHttpClientFactory httpClientFactory, IConfiguration configuration, ILogger<CartController> logger)
+        public CartController(IHttpClientFactory httpClientFactory, 
+            IConfiguration configuration, 
+            ILogger<CartController> logger,
+            ProductCatalogApi productApiService)
         {
             _httpClientFactory = httpClientFactory;
             _configuration = configuration;
             _logger = logger;
+            _productApiService = productApiService;
         }
 
         public async Task<IActionResult> Index(Guid userId)
@@ -37,6 +40,17 @@ namespace UnifiedFrontend.Controllers
 
                 var basket = await response.Content.ReadFromJsonAsync<ShoppingBasket>();
                 _logger.LogInformation("Loaded shopping basket for UserId: {UserId}. Items: {ItemCount}", userId, basket?.BasketLines?.Count ?? 0);
+
+                var productIds = basket?.BasketLines?.Select(x => x.ProductId)?.ToList();
+                if (basket?.BasketLines?.Any() == true)
+                {
+                    var products = await _productApiService.GetAllProductsAsync();
+                    foreach (var basketLine in basket.BasketLines)
+                    {
+                        basketLine.Name = products.FirstOrDefault(x => x.ProductId == basketLine.ProductId)?.Name;
+                    }
+                }
+
                 return View(basket);
             }
             catch (Exception ex)

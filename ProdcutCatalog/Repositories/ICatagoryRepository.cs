@@ -9,7 +9,7 @@ namespace ProdcutCatalog.Repositories
     public interface ICategoryRepository
     {
         Task<IEnumerable<Category>> GetAllCategories();
-        Task<Category> GetCategoryById(string categoryId);
+        Task<Category> GetCategoryById(Guid categoryId);
         Task AddCategory(Category category);
     }
 }
