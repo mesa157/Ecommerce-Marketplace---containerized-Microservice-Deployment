@@ -36,6 +36,8 @@ bld/
 # Ignore build output
 bin/
 obj/
+**/bin/*
+**/obj/*
 
 # Ignore Rider project files
 .idea/
