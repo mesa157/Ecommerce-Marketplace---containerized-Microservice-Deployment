@@ -52,12 +52,33 @@ namespace UnifiedFrontend.Controllers
 
             if (!string.IsNullOrEmpty(token))
             {
-                SaveToken(token);
-                return RedirectToAction("Profile");
+                SaveToken(token); 
+
+                var userId = ExtractUserIdFromToken(token);
+                if (userId != Guid.Empty)
+                {
+                    HttpContext.Session.SetString("UserId", userId.ToString());
+                }
+
+                return RedirectToAction("Index", "Cart", new { userId });
             }
 
             ViewBag.Error = "Invalid credentials. Please try again.";
             return View();
+        }
+
+        private Guid ExtractUserIdFromToken(string token)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadToken(token) as JwtSecurityToken;
+
+            if (jwtToken == null)
+            {
+                return Guid.Empty;
+            }
+
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+            return userIdClaim != null ? Guid.Parse(userIdClaim.Value) : Guid.Empty;
         }
 
         public async Task<IActionResult> Profile()
@@ -170,7 +191,7 @@ namespace UnifiedFrontend.Controllers
 
         private void ClearToken()
         {
-            HttpContext.Session.Remove("AuthToken");
+            HttpContext.Session.Clear();
         }
 
         private Guid GetUserId()

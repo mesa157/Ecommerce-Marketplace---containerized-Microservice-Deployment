@@ -29,6 +29,10 @@ namespace ShoppingBasket.Service
         public async Task<ShoppingBasketDto> GetShoppingBasketByUserId(Guid userId)
         {
             var basket = await _shoppingBasketRepository.GetShoppingBasketByUserId(userId);
+            if (basket == null)
+            {
+                basket = await _shoppingBasketRepository.CreateShoppingBasket(userId);
+            }
             return _mapper.Map<ShoppingBasketDto>(basket);
         }
 
@@ -96,7 +100,7 @@ namespace ShoppingBasket.Service
             var basket = await _shoppingBasketRepository.GetShoppingBasketByUserId(userId);
             if (basket != null)
             {
-                basket.BasketLines.Clear();
+                basket.Active = false;;
                 await _basketLinesRepository.SaveChanges();
             }
         }

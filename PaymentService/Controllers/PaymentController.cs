@@ -40,6 +40,7 @@ namespace PaymentService.Controllers
                 UserId = payment.UserId,
             };
             await _context.AddAsync(paymentEntity);
+            await _context.SaveChangesAsync();
 
             return Ok(paymentEntity);
         }

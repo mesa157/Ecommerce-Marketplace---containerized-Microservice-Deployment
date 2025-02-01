@@ -84,5 +84,19 @@ namespace ShoppingBasket.Controllers
                 return StatusCode(500, $"An error occurred while retrieving the basket: {ex.Message}");
             }
         }
+
+        [HttpPost("clear/{userId}")]
+        public async Task<ActionResult<ShoppingBasketDto>> ClearBasket(Guid userId)
+        {
+            try
+            {
+                await _shoppingBasketService.ClearBasket(userId);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred while retrieving the basket: {ex.Message}");
+            }
+        }
     }
 }

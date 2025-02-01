@@ -5,5 +5,6 @@ namespace ShoppingBasket.Repositories
     {
         Task<ShoppingBaskett> GetShoppingBasketByUserId(Guid userId);
         Task<ShoppingBaskett> CreateShoppingBasket(Guid userId);
+        Task ClearBasket(Guid userId);
     }
 }

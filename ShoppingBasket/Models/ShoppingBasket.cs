@@ -7,6 +7,7 @@ namespace ShoppingBasket.Models
         [Key]
         public Guid ShoppingBasketId { get; set; }
         public Guid UserId { get; set; }
+        public bool Active { get; set; }
         public List<BasketLine> BasketLines { get; set; }
     }
 }

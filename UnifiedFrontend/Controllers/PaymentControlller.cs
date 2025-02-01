@@ -54,6 +54,10 @@ namespace UnifiedFrontend.Controllers
                     return View("Index", model);
                 }
 
+                var cartServiceUrl = _configuration["BackendServices2:CartService"];
+                var cartServiceClient = _httpClientFactory.CreateClient();
+                var clearResponse = await client.PostAsync($"{cartServiceUrl}/api/shoppingbasket/clear/{model.UserId}", null);
+
                 TempData["SuccessMessage"] = "Payment successful! Thank you for your order.";
                 return RedirectToAction("OrderConfirmation", new { userId = model.UserId });
             }

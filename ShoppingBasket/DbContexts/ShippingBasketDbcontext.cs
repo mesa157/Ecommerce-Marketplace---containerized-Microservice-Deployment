@@ -20,7 +20,6 @@ namespace ShoppingBasket.DbContexts
                 .HasOne<ShoppingBaskett>()
                 .WithMany()
                 .HasForeignKey(b => b.ShoppingBasketId);
-
             
         }
     }

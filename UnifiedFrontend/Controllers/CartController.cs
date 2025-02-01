@@ -23,10 +23,17 @@ namespace UnifiedFrontend.Controllers
             _productApiService = productApiService;
         }
 
-        public async Task<IActionResult> Index(Guid userId)
+        public async Task<IActionResult> Index()
         {
             var apiUrl = _configuration["BackendServices2:CartService"];
             var client = _httpClientFactory.CreateClient();
+
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (string.IsNullOrEmpty(userIdString) || !Guid.TryParse(userIdString, out var userId))
+            {
+                return RedirectToAction("Login", "Account");
+            }
 
             try
             {
@@ -62,8 +69,16 @@ namespace UnifiedFrontend.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddToCart(Guid userId, Guid productId, int quantity)
+        public async Task<IActionResult> AddToCart(Guid productId, int quantity)
         {
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (string.IsNullOrEmpty(userIdString) || !Guid.TryParse(userIdString, out var userId))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+
             if (quantity <= 0)
             {
                 TempData["ErrorMessage"] = "Quantity must be at least 1.";
