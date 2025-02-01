@@ -95,4 +95,9 @@ app.MapControllerRoute(
     name: "cart",
     pattern: "{controller=Cart}/{action=Index}/{userId?}");
 
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
 app.Run();

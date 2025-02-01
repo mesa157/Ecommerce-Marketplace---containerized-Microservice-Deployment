@@ -9,6 +9,7 @@ namespace PaymentService.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<Payment> Payments { get; set; }
-        
+        public DbSet<CreditCardPayment> CreditCardPayments { get; set; }
+
     }
 }

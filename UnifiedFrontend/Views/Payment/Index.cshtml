@@ -1,67 +1,48 @@
-﻿@model PaginatedResult<UnifiedFrontend.Models.PaymentModel.Payment>
-@using UnifiedFrontend.Models.PaymentModel
+﻿@model UnifiedFrontend.Models.PaymentModel.PaymentViewModel
 
-<div class="container mt-4">
-    <h1>Payments</h1>
+<h1>Payment Details</h1>
 
-    <!-- Search Bar -->
-    <form method="get" asp-action="Index" class="mb-4">
-        <div class="input-group">
-            <input type="text" name="search" value="@ViewData["SearchQuery"]" class="form-control" placeholder="Search payments" />
-            <button type="submit" class="btn btn-primary">Search</button>
-        </div>
-    </form>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
 
-    <!-- Payments Table -->
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Amount</th>
-                <th>Currency</th>
-                <th>Status</th>
-                <th>Transaction ID</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model?.Items == null || !Model.Items.Any())
-            {
-                <tr>
-                    <td colspan="6" class="text-center">No payments found.</td>
-                </tr>
-            }
-            else
-            {
-                @foreach (var payment in Model.Items)
-                {
-                    <tr>
-                        <td>@payment.Id</td>
-                        <td>@payment.Amount</td>
-                        <td>@payment.Currency</td>
-                        <td>@payment.Status</td>
-                        <td>@payment.TransactionId</td>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@payment.Id" class="btn btn-info btn-sm">View</a>
-                        </td>
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
+<form method="post" asp-action="ProcessPayment" asp-controller="Payment">
+    <input type="hidden" asp-for="UserId" />
+    <input type="hidden" asp-for="Amount" />
 
-    <!-- Pagination -->
-    @if (Model?.TotalItems > Model.PageSize)
-    {
-        <nav>
-            <ul class="pagination">
-                @for (var i = 1; i <= (Model.TotalItems + Model.PageSize - 1) / Model.PageSize; i++)
-                {
-                    <li class="page-item @(i == Model.Page ? "active" : "")">
-                        <a class="page-link" asp-action="Index" asp-route-page="@i" asp-route-search="@ViewData["SearchQuery"]">@i</a>
-                    </li>
-                }
-            </ul>
-        </nav>
-    }
-</div>
+    <div class="form-group">
+        <label for="CardNumber">Card Number</label>
+        <input asp-for="CardNumber" class="form-control" required />
+        <span asp-validation-for="CardNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="CardholderName">Cardholder Name</label>
+        <input asp-for="CardholderName" class="form-control" required />
+        <span asp-validation-for="CardholderName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="ExpiryDate">Expiry Date</label>
+        <input asp-for="ExpiryDate" type="month" class="form-control" required />
+        <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="CVC">CVC</label>
+        <input asp-for="CVC" class="form-control" required />
+        <span asp-validation-for="CVC" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Total Amount: </label>
+        <strong>@Model.Amount.ToString("C")</strong>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>

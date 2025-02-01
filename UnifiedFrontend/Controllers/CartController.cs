@@ -184,25 +184,17 @@ namespace UnifiedFrontend.Controllers
             var apiUrl = _configuration["BackendServices2:CartService"];
             var client = _httpClientFactory.CreateClient();
 
-            try
+            var response = await client.GetAsync($"{apiUrl}/api/shoppingbasket/{userId}");
+            if (!response.IsSuccessStatusCode)
             {
-                var response = await client.PostAsync($"{apiUrl}/api/shoppingbasket/{userId}/checkout", null);
-                if (!response.IsSuccessStatusCode)
-                {
-                    TempData["ErrorMessage"] = "Failed to complete the checkout.";
-                    _logger.LogWarning("Failed to checkout for UserId: {UserId}. StatusCode: {StatusCode}", userId, response.StatusCode);
-                    return RedirectToAction("Index", new { userId });
-                }
+                _logger.LogError("Failed to fetch shopping basket for UserId: {UserId}. StatusCode: {StatusCode}", userId, response.StatusCode);
+                ViewBag.ErrorMessage = "Failed to load your cart. Please try again.";
+                return View(new ShoppingBasket { UserId = userId });
+            }
 
-                TempData["SuccessMessage"] = "Checkout completed successfully.";
-                return RedirectToAction("Index", new { userId });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error during checkout for UserId: {UserId}", userId);
-                TempData["ErrorMessage"] = "An error occurred during checkout.";
-                return RedirectToAction("Index", new { userId });
-            }
+            var basket = await response.Content.ReadFromJsonAsync<ShoppingBasket>();
+
+            return RedirectToAction("Index", "Payment", new { userId, totalAmount = basket.TotalPrice });
         }
     }
 }

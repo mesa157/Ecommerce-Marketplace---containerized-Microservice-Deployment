@@ -1,74 +1,74 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using UnifiedFrontend.Models.PaymentModel;
-using UnifiedFrontend.Services.PaymentServices;
 
-namespace PaymentFrontend.Controllers
+namespace UnifiedFrontend.Controllers
 {
     public class PaymentController : Controller
     {
-        private readonly PaymentService _paymentService;
+        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger<PaymentController> _logger;
 
-        public PaymentController(PaymentService paymentService)
+        public PaymentController(IHttpClientFactory httpClientFactory, IConfiguration configuration, ILogger<PaymentController> logger)
         {
-            _paymentService = paymentService;
+            _httpClientFactory = httpClientFactory;
+            _configuration = configuration;
+            _logger = logger;
         }
 
-        public async Task<IActionResult> Index(string search = "", int page = 1)
+        [HttpGet]
+        public IActionResult Index(Guid userId, decimal totalAmount)
         {
-            var result = await _paymentService.GetPayments(search, page, 10);
-
-            // Ensure result is not null
-            if (result == null)
+            var model = new PaymentViewModel
             {
-                result = new PaginatedResult<Payment>
+                UserId = userId,
+                Amount = totalAmount
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ProcessPayment(PaymentViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                TempData["ErrorMessage"] = "Invalid payment details. Please check and try again.";
+                return View("Index", model);
+            }
+
+            var apiUrl = _configuration["BackendServices3:PaymentService"];
+            var client = _httpClientFactory.CreateClient();
+
+            try
+            {
+                var response = await client.PostAsJsonAsync($"{apiUrl}/api/payments", model);
+                if (!response.IsSuccessStatusCode)
                 {
-                    Items = new List<Payment>(),
-                    Page = page,
-                    PageSize = 10,
-                    TotalItems = 0
-                };
+                    _logger.LogWarning("Payment failed for UserId: {UserId}. StatusCode: {StatusCode}", model.UserId, response.StatusCode);
+                    TempData["ErrorMessage"] = "Payment failed. Please try again.";
+                    return View("Index", model);
+                }
+
+                TempData["SuccessMessage"] = "Payment successful! Thank you for your order.";
+                return RedirectToAction("OrderConfirmation", new { userId = model.UserId });
             }
-
-            ViewData["SearchQuery"] = search;
-            return View(result);
-        }
-
-
-        // View Payment Details
-        public async Task<IActionResult> Details(int id)
-        {
-            var payment = await _paymentService.GetPaymentById(id);
-            if (payment == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                _logger.LogError(ex, "Error processing payment for UserId: {UserId}", model.UserId);
+                TempData["ErrorMessage"] = "An error occurred during payment.";
+                return View("Index", model);
             }
-            return View(payment);
         }
 
-        // Create Payment
-        public IActionResult Create()
+        public IActionResult OrderConfirmation(Guid userId)
         {
+            ViewBag.UserId = userId;
             return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Create(Payment payment)
-        {
-            if (ModelState.IsValid)
-            {
-                var result = await _paymentService.CreatePayment(payment);
-                return RedirectToAction("Details", new { id = result.Id });
-            }
-            return View(payment);
-        }
-
-        // Update Payment Status (Admin)
-        [HttpPost]
-        public async Task<IActionResult> UpdateStatus(int id, string status)
-        {
-            await _paymentService.UpdatePaymentStatus(id, status);
-            return RedirectToAction("Details", new { id });
         }
     }
 }

@@ -27,21 +27,21 @@ namespace PaymentService.Controllers
 
         // POST: api/payments
         [HttpPost]
-        public async Task<IActionResult> PostPayment([FromBody] Payment payment)
+        public async Task<IActionResult> PostPayment([FromBody] PaymentModel payment)
         {
-            if (payment == null)
+            var paymentEntity = new CreditCardPayment
             {
-                return BadRequest("Payment details are required.");
-            }
+                Id = Guid.NewGuid(),
+                Amount = payment.Amount,
+                CardholderName = payment.CardholderName,
+                CardNumber = payment.CardNumber,
+                CVC = payment.CVC,
+                ExpiryDate = payment.ExpiryDate,
+                UserId = payment.UserId,
+            };
+            await _context.AddAsync(paymentEntity);
 
-            var result = await _paymentService.ProcessPayment(payment);
-
-            if (result.Status == "Succeeded")
-            {
-                return Ok(result);
-            }
-
-            return StatusCode(500, $"Payment failed: {result.Status}");
+            return Ok(paymentEntity);
         }
 
         // PUT: api/payments/{id}/status
